@@ -1,0 +1,61 @@
+/* Muuri */
+body {
+	overflow-y: scroll; /* スクロールバーのありなしによるMuuriレイアウト崩れを防止したい場合にyスクロールを出しっぱなしにする */
+}
+
+.grid {
+	position: relative;
+	transition: opacity 0.5s ease;
+	opacity: 1;
+	&.grid--loading {
+		opacity: 0;
+	}
+}
+
+.grid img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom; /*画像の下にできる余白を削除*/
+}
+
+.item {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+.item.muuri-item-dragging {
+	z-index: 3;
+}
+
+.item.muuri-item-releasing {
+	z-index: 2;
+}
+
+.item.muuri-item-hidden {
+	z-index: 0;
+}
+
+.item-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.filter-btn {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0;
+	list-style: none;
+	text-transform: uppercase;
+	.active {
+		color: #ccc;
+	}
+}
+
+.filter-btn li {
+	position: relative;
+	cursor: pointer;
+	margin: 0 20px;
+}

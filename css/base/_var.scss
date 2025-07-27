@@ -1,0 +1,43 @@
+$bp-sm: 576;
+$bp-md: 768;
+$bp-lg: 992;
+$bp-xl: 1200;
+$bp-xxl: 1400;
+
+$fs-xxs-min: 0.8;
+$fs-xxs-max: 1.0;
+$fs-xs-min: 0.9;
+$fs-xs-max: 1.1;
+$fs-s-min: 1.0;
+$fs-s-max: 1.2;
+$fs-m-min: 1.2;
+$fs-m-max: 1.5;
+$fs-l-min: 1.4;
+$fs-l-max: 1.8;
+$fs-xl-min: 1.6;
+$fs-xl-max: 2.0;
+$fs-xxl-min: 1.8;
+$fs-xxl-max: 2.4;
+
+:root {
+    --spacer-xxs: 2px;
+	--spacer-xs: 4px;
+	--spacer-s: 8px;
+	--spacer-m: 16px;
+	--spacer-l: 32px;
+	--spacer-xl: 64px;
+	--spacer-xxl: 128px;
+
+	@media (min-width: 992px) {
+		--spacer-xxs: 4px;
+		--spacer-xs: 8px;
+		--spacer-s: 16px;
+		--spacer-m: 32px;
+		--spacer-l: 64px;
+		--spacer-xl: 128px;
+		--spacer-xxl: 256px;
+	}
+}
+
+
+

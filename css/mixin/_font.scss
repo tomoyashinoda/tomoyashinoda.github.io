@@ -1,0 +1,41 @@
+@use "../base/var";
+
+@mixin fluid-font($rem-min, $rem-max, $vw-min: 576, $vw-max: 1400) {
+	font-size: $rem-min * 1rem;
+	$vw-min-px: $vw-min * 1px;
+	$vw-max-px: $vw-max * 1px;
+	@media (min-width: $vw-min-px) {
+		font-size: calc($rem-min * 1rem + ($rem-max - $rem-min) * 10 * (100vw - $vw-min * 1px) / ($vw-max - $vw-min));
+	}
+	@media (min-width: $vw-max-px) {
+		font-size: $rem-max * 1rem;
+	}
+}
+
+@mixin fluid-font-xxs($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-xxs-min, var.$fs-xxs-max, $vw-min, $vw-max);
+}
+
+@mixin fluid-font-xs($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-xs-min, var.$fs-xs-max, $vw-min, $vw-max);
+}
+
+@mixin fluid-font-s($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-s-min, var.$fs-s-max, $vw-min, $vw-max);
+}
+
+@mixin fluid-font-m($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-m-min, var.$fs-m-max, $vw-min, $vw-max);
+}
+
+@mixin fluid-font-l($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-l-min, var.$fs-l-max, $vw-min, $vw-max);
+}
+
+@mixin fluid-font-xl($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-xl-min, var.$fs-xl-max, $vw-min, $vw-max);
+}
+
+@mixin fluid-font-xxl($vw-min: 576, $vw-max: 1400) {
+	@include fluid-font(var.$fs-xxl-min, var.$fs-xxl-max, $vw-min, $vw-max);
+}

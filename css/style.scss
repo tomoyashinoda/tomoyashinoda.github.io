@@ -1,0 +1,38 @@
+// base
+@use "base/var";
+@use "base/base";
+
+// vendor
+@use "vendor/bootstrap";
+@use "vendor/muuri";
+@use "vendor/photoswipe";
+
+// mixin
+@use "mixin/font";
+@use "mixin/bp";
+
+/* ------------------------------ */
+header {
+	padding: 30px;
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 30px;
+}
+
+footer {
+	text-align: center;
+	padding: 60px 30px;
+	width: 100%;
+	@include font.fluid-font-s;
+}
+
+.title {
+	@include font.fluid-font(1.6, 3.2, 576, 992);
+}
+
+.filter-btn {
+	@include font.fluid-font-m;
+}
+

@@ -1,0 +1,12 @@
+/* base */
+html {
+	font-size: 62.5%;
+	--fluid-ratio: calc((100vw - 576px) / (1400 - 576)); /* sm 576: 0, xxl 1400: 1 */
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}

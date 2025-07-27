@@ -1,0 +1,40 @@
+@use "../base/var";
+
+$bp-sm-px: var.$bp-sm * 1px;
+$bp-md-px: var.$bp-md * 1px;
+$bp-lg-px: var.$bp-lg * 1px;
+$bp-xl-px: var.$bp-xl * 1px;
+$bp-xxl-px: var.$bp-xxl * 1px;
+
+@mixin sm {
+	@media (min-width: $bp-sm-px) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media (min-width: $bp-md-px) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media (min-width: $bp-lg-px) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media (min-width: $bp-xl-px) {
+		@content;
+	}
+}
+
+@mixin xxl {
+	@media (min-width: $bp-xxl-px) {
+		@content;
+	}
+}
+
+
+

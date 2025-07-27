@@ -4,65 +4,330 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="format-detection" content="telephone=no" />
-		<meta name="description" content="サイトの説明をここに記述。" />
-		<title>Test page</title>
-		<link rel="canonical" href="https://xxxxxxxxxxxx.com/" />
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-				background-color: #f4f4f4;
-			}
-			header {
-				background: #333;
-				color: white;
-				padding: 15px;
-				text-align: center;
-			}
-			nav {
-				background: #444;
-				padding: 10px;
-				text-align: center;
-			}
-			nav a {
-				color: white;
-				margin: 0 15px;
-				text-decoration: none;
-			}
-			.container {
-				max-width: 800px;
-				margin: 20px auto;
-				padding: 20px;
-				background: white;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
-			footer {
-				background: #333;
-				color: white;
-				text-align: center;
-				padding: 10px;
-				position: fixed;
-				bottom: 0;
-				width: 100%;
-			}
-		</style>
+		<meta name="description" content="Tomoya Shinoda" />
+		<title>Tomoya Shinoda</title>
+		<!-- link rel="canonical" href="https://xxxxxxxx.com/" /-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe-dynamic-caption-plugin/1.1.0/photoswipe-dynamic-caption-plugin.css"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 
 	<body>
 		<header>
-			<h1>サンプルウェブページ：h1は20文字以上が推奨されています。</h1>
+			<h1 class="title">tomoyashinoda.github.io</h1>
 		</header>
-		<nav>
-			<a href="./a/">a</a>
-			<a href="./b/">b</a>
-			<a href="./c/">c</a>
-			<a href="./d/">d</a>
-		</nav>
-		<div class="container">
-			<h2>ようこそ！</h2>
-			<p>これはシンプルなHTML/CSSのサンプルウェブページです。</p>
+		<ul class="filter-btn">
+			<li class="all active">All</li>
+			<li class="y2017">2017</li>
+			<li class="y2018">2018</li>
+		</ul>
+		<div class="container-fluid">
+			<div class="grid grid--loading row" id="photoswipe-gallery">
+				<div class="item y2018 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20180806-005114-IMG_9833.JPG" data-pswp-width="1867" data-pswp-height="2800" target="_blank">
+							<img src="./images/20180806-005114-IMG_9833__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2018 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20180722-213706-IMG_9721.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20180722-213706-IMG_9721__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2017 col-md-6">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20170822-230139-IMG_8333.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20170822-230139-IMG_8333__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2018 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20180902-000733-IMG_0546.JPG" data-pswp-width="1867" data-pswp-height="2800" target="_blank">
+							<img src="./images/20180902-000733-IMG_0546__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2017 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20170823-200202-IMG_8403.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20170823-200202-IMG_8403__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2018 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20180815-022805-IMG_9877.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20180815-022805-IMG_9877__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2017 col-md-6">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20170822-222956-IMG_8300.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20170822-222956-IMG_8300__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2017 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20170822-230244-IMG_8336.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20170822-230244-IMG_8336__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+
+				<div class="item y2018 col-md-3">
+					<div class="item-content photoswipe-slide photoswipe-slide--active">
+						<!-- Safe zone, enter your custom markup -->
+						<a href="./images/20180902-222427-IMG_0677.JPG" data-pswp-width="2800" data-pswp-height="1867" target="_blank">
+							<img src="./images/20180902-222427-IMG_0677__xs.JPG" alt="" />
+						</a>
+						<!--div class="hidden-caption-content pswp-caption-content">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+									<div class="col-6">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<a href="https://example.com" target="_blank" rel="nofollow">Test link &rarr;</a>
+									</div>
+								</div>
+							</div>
+						</div-->
+						<!-- Safe zone ends -->
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer>&copy; 2025 サンプルウェブサイト</footer>
+		<footer>&copy; 2025 Tomoya Shinoda</footer>
+
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+		<script src="./js/setup-muuri.js"></script>
+		<script type="module">
+			import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js";
+			import PhotoSwipeDynamicCaption from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe-dynamic-caption-plugin/1.1.0/photoswipe-dynamic-caption-plugin.esm.min.js";
+			const leftArrowSVGString = '<i class="photoswipe-icon bi bi-arrow-left-circle-fill"></i>';
+			const smPadding = {
+				top: 0,
+				bottom: 0,
+				left: 0,
+				right: 0,
+			};
+			const lgPadding = {
+				top: 60,
+				bottom: 60,
+				left: 60,
+				right: 60,
+			};
+			const options = {
+				showHideAnimationType: "zoom",
+				showAnimationDuration: 250,
+				hideAnimationDuration: 250,
+				zoomAnimationDuration: 250,
+				bgOpacity: 0.95,
+				paddingFn: (viewportSize) => {
+					return viewportSize.x < 992 ? smPadding : lgPadding;
+				},
+				arrowPrevSVG: '<i class="photoswipe-arrow bi bi-arrow-left-short"></i>',
+				arrowNextSVG: '<i class="photoswipe-arrow bi bi-arrow-right-short"></i>',
+				closeSVG: '<i class="photoswipe-icon-close bi bi-x"></i>',
+				// zoomSVG: '<i class="bi bi-zoom-in"></i>',
+				zoom: false,
+				mainClass: "photoswipe-mainclass",
+				indexIndicatorSep: " / ",
+				gallery: "#photoswipe-gallery",
+				children: ".photoswipe-slide--active",
+				pswpModule: () => import("https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.esm.min.js"),
+			};
+			const lightbox = new PhotoSwipeLightbox(options);
+			const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+				// Plugins options, for example:
+				type: "below",
+				mobileLayoutBreakpoint: 576,
+				mobileCaptionOverlapRatio: 1,
+			});
+			/*
+			lightbox.on("uiRegister", function () {
+				lightbox.pswp.ui.registerElement({
+					name: "bulletsIndicator",
+					className: "pswp__bullets-indicator",
+					appendTo: "wrapper",
+					onInit: (el, pswp) => {
+						const bullets = [];
+						let bullet;
+						let prevIndex = -1;
+
+						for (let i = 0; i < pswp.getNumItems(); i++) {
+							bullet = document.createElement("div");
+							bullet.className = "pswp__bullet";
+							bullet.onclick = (e) => {
+								pswp.goTo(bullets.indexOf(e.target));
+							};
+							el.appendChild(bullet);
+							bullets.push(bullet);
+						}
+
+						pswp.on("change", (a) => {
+							if (prevIndex >= 0) {
+								bullets[prevIndex].classList.remove("pswp__bullet--active");
+							}
+							bullets[pswp.currIndex].classList.add("pswp__bullet--active");
+							prevIndex = pswp.currIndex;
+						});
+					},
+				});
+			});
+			*/
+			lightbox.init();
+		</script>
 	</body>
 </html>
